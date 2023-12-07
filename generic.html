@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Efren Acosta's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">EA</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">About Me</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Efren Acosta</h2>
+								<p>Full-Stack Software Engineer</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">About Me</h3>
+									<p>As a Full-Stack Engineer, I excel in both backend development using Python frameworks like Django and FastAPI, and frontend work with JavaScript (React). My proficiency extends to crafting dynamic and responsive user interfaces using HTML and CSS. Leveraging Docker and Git, I ensure a seamless development and deployment process. Exploring additional areas such as cloud services, automated testing, and CI/CD is on my radar for continuous growth. Staying current with the latest trends in web development remains a priority.</p>
+									</section>
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+					  <h2 class="major">Get in touch</h2>
+					  <p>I'm always looking for new opportunities to connect! You can reach me by email or by cell phone. Please send me an email to reach me after hours. Looking forward to speaking with you!</p>
+					  <form id="contactForm">
+						<div class="fields">
+						  <div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						  </div>
+						  <div class="field">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+						  </div>
+						  <div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						  </div>
+						</div>
+						<ul class="actions">
+						  <li><button type="button" onclick="sendEmail()">Send Message</button>
+						  </li>
+						</ul>
+					  </form>
+					  <ul class="contact">
+						<li class="icon solid fa-home">
+						  Efren Acosta<br />
+						  Central Standard Time (CST)<br />
+						  Oklahoma City, OK 73120
+						</li>
+						<li class="icon solid fa-phone">(515) 723-2447</li>
+						<li class="icon solid fa-envelope">efrenacosta68@gmail.com</li>
+					  </ul>
+					  <ul class="copyright">
+						<li>&copy; Efren Acosta. All rights reserved.</li>
+					  </ul>
+					</div>
+				  </section>
+
+				  <script>
+					function sendEmail() {
+					  var name = document.getElementById('name').value;
+					  var email = document.getElementById('email').value;
+					  var message = document.getElementById('message').value;
+
+					  var subject = 'New Message from ' + name;
+					  var body = 'From: ' + email + '\nName: ' + name + '\nMessage: ' + message;
+					  window.location.href = 'mailto:efrenacosta68@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+					  return false;
+					}
+				  </script>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
